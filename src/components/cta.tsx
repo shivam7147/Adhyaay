@@ -33,7 +33,7 @@ export default function CTA() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <button
                   className="flex items-center justify-between rounded-full bg-black px-6 py-3 text-white sm:w-[240px]"
-                  onClick={() => router("/councellors")}
+                  onClick={() => router("/adhyaay/councellors")}
                 >
                   <span className="font-medium">Book Appointment</span>
                   <span className="h-5 w-5 flex-shrink-0 rounded-full bg-white"></span>
@@ -41,7 +41,7 @@ export default function CTA() {
 
                 <button
                   className="flex items-center justify-between rounded-full bg-black px-6 py-3 text-white sm:w-[240px]"
-                  onClick={() => router("/mentors")}
+                  onClick={() => router("/adhyaay/mentors")}
                 >
                   <span className="font-medium">Meet Your Mentors</span>
                   <span className="h-5 w-5 flex-shrink-0 rounded-full bg-white"></span>

@@ -42,9 +42,8 @@ const handleLogout = async () => {
       }
     };
 
-    if (window.location.pathname !== "/") {
-      navigate("/");
-      // delay to wait until Home is mounted
+    if (!window.location.pathname.startsWith("/adhyaay")) {
+      navigate("/adhyaay/");
       setTimeout(doScroll, 200);
     } else {
       doScroll();
@@ -52,10 +51,10 @@ const handleLogout = async () => {
   };
 
   const navItems = [
-    { name: "Home", to: "/", type: "route" },
+    { name: "Home", to: "/adhyaay/", type: "route" },
     { name: "About", to: "aboutus", type: "scroll" },
     { name: "Teams", to: "teams", type: "scroll" },
-    { name: "Services", to: "/Councellors", type: "route" },
+    { name: "Services", to: "/adhyaay/councellors", type: "route" },
     { name: "Contact", to: "footer", type: "scroll" },
   ];
 
@@ -68,7 +67,7 @@ const handleLogout = async () => {
         <div className="grid grid-cols-3 items-center h-full">
           {/* Logo */}
 <div className="flex items-center gap-1 justify-start">
-  <RouterLink to="/" onClick={() => setIsOpen(false)} className="flex items-center gap-1">
+  <RouterLink to="/adhyaay/" onClick={() => setIsOpen(false)} className="flex items-center gap-1">
     <img src={logo} alt="Adhyaay Logo" className="h-8 w-8 ml-2" />
     <span className="text-xl md:text-2xl font-bold tracking-wide text-gray-900">
       ADHYAAY
@@ -116,14 +115,14 @@ const handleLogout = async () => {
             ) : (
               <>
                 <Button asChild variant="outline" className="bg-[#fe7500] text-white">
-                  <RouterLink to="/login">Sign In</RouterLink>
+                  <RouterLink to="/adhyaay/login">Sign In</RouterLink>
                 </Button>
                 <Button
                   asChild
                   variant="outline"
                   className="border border-[#fe7500] text-[#fe7500]"
                 >
-                  <RouterLink to="/register">Sign Up</RouterLink>
+                  <RouterLink to="/adhyaay/register">Sign Up</RouterLink>
                 </Button>
               </>
             )}
@@ -182,14 +181,14 @@ const handleLogout = async () => {
             <>
               <li>
                 <Button asChild className="w-full bg-[#fe7500] text-white px-4 py-2 rounded-md">
-                  <RouterLink to="/login" onClick={() => setIsOpen(false)}>
+                  <RouterLink to="/adhyaay/login" onClick={() => setIsOpen(false)}>
                     Sign In
                   </RouterLink>
                 </Button>
               </li>
               <li>
                 <Button asChild className="w-full border bg-[#fe7500] text-white px-4 py-2 rounded-md">
-                  <RouterLink to="/register" onClick={() => setIsOpen(false)}>
+                  <RouterLink to="/adhyaay/register" onClick={() => setIsOpen(false)}>
                     Sign Up
                   </RouterLink>
                 </Button>

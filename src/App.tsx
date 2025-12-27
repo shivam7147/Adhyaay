@@ -51,16 +51,16 @@ export default function App() {
 
       <ScrollToTop />  
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/register" element={<Register />} />
+          <Route path="/adhyaay/" element={<Home />} />
+          <Route path="/adhyaay/register" element={<Register />} />
           <Route
-            path="/login"
+            path="/adhyaay/login"
             element={<Login setIsAuthenticated={setIsAuthenticated} />}
           />
-          <Route path="/management-team" element={<ManagementTeam />} />
-          <Route path="/councellors" element={<Councellors />} />
-          <Route path="/mentors" element={<Mentors />} />
-          <Route path="/book" element={<Booking />} />
+          <Route path="/adhyaay/management-team" element={<ManagementTeam />} />
+          <Route path="/adhyaay/councellors" element={<Councellors />} />
+          <Route path="/adhyaay/mentors" element={<Mentors />} />
+          <Route path="/adhyaay/book" element={<Booking />} />
         </Routes> 
 
       <div id="footer">

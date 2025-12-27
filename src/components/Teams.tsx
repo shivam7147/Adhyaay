@@ -22,7 +22,7 @@ export default function Teams() {
 <div className="flex items-center justify-center">
   <div className="grid grid-cols-1 md:grid-cols-3 gap-34">
 
-<Link to="/mentors">
+<Link to="/adhyaay/mentors">
     <GlareCard className="flex flex-col items-center justify-center">
       <svg
         width="66"
@@ -47,7 +47,7 @@ export default function Teams() {
     </GlareCard>
 </Link>
 
-<Link to="management-team">
+<Link to="/adhyaay/management-team">
 <GlareCard className="flex flex-col items-center justify-center">
   <svg
     width="66"
@@ -71,7 +71,7 @@ export default function Teams() {
   </p>
 </GlareCard>
 </Link>
-<Link to="/Councellors">
+<Link to="/adhyaay/councellors">
 <GlareCard className="flex flex-col items-center justify-center">
   <svg
     width="66"

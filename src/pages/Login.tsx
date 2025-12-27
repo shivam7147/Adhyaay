@@ -40,7 +40,7 @@ export default function Login({ setIsAuthenticated }: { setIsAuthenticated: (val
 
       setIsAuthenticated(true);
       toast.success("Login successful!");
-      navigate("/");
+      navigate("/adhyaay/");
     }
   } catch (error: any) {
     setServerError(error.response?.data?.message || "Login failed");
@@ -142,7 +142,7 @@ export default function Login({ setIsAuthenticated }: { setIsAuthenticated: (val
           {/* Register link */}
           <p className="text-sm mt-4 text-center text-black">
             Don’t have an account?{" "}
-            <Link to="/register" className="text-orange-600 hover:underline">
+            <Link to="/adhyaay/register" className="text-orange-600 hover:underline">
               Sign up
             </Link>
           </p>

@@ -40,7 +40,7 @@ export default function Register() {
       }
 
       toast.success("Registration successful!");
-      navigate("/");
+      navigate("/adhyaay/");
     }
   } catch (error: any) {
     setServerError(error.response?.data?.message || "Registration failed");
@@ -156,7 +156,7 @@ export default function Register() {
           {/* Sign in */}
           <p className="text-sm mt-4 text-center text-black">
             Already have an account?{" "}
-            <Link to="/login" className="text-orange-600 hover:underline">
+            <Link to="/adhyaay/login" className="text-orange-600 hover:underline">
               Sign in
             </Link>
           </p>

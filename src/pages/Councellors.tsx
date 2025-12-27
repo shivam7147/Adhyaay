@@ -38,7 +38,7 @@ export default function Councellors() {
         <Button
           size="lg"
           className="mt-4 rounded-xl bg-orange-600 text-white hover:bg-orange-500"
-          onClick={() => router("/book")}
+          onClick={() => router("/adhyaay/book")}
         >
           Book Your Session
         </Button>

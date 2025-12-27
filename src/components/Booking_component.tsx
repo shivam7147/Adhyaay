@@ -54,7 +54,7 @@ const BookingComponent: React.FC = () => {
     const fetchMentors = async () => {
       try {
         const res = await api.get("/mentors");
-        setMentors(res.data);
+        setMentors(Array.isArray(res.data) ? res.data : []);
       } catch (err) {
         toast.error("Failed to load mentors. Try again later.");
       }
